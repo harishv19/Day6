@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Person {
+        constructor(firstName, lastName, age, email, phone) {
+            this.firstName = firstName;
+            this.lastName = lastName;
+            this.age = age;
+            this.email = email;
+            this.phone = phone;
+        }
+
+            getFullName() {
+                return `${this.firstName} ${this.lastName}`;
+            }
+        }
+
+        // Example usage:
+        const person1 = new Person("Harish", "Vasudevan", 25, "harish.v@gmail.com", "+91 78456-78900");
+
+        console.log(`Name: ${person1.getFullName()}`);
+        console.log(`Age: ${person1.age}`);
+        console.log(`Email: ${person1.email}`);
+        console.log(`Phone: ${person1.phone}`);
+
+    </script>
+</body>
+</html>
